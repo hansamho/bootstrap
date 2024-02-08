@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+  <form action="">
+    <div class="container-md">
+    <!-- 목록 -->
+    	<div class="row">
+    		<div class="col-2 d-grid">
+    			<ul class="flex-column">
+    				<li class="nav-item">
+    					<a class="nav-link" href="#">home</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">공지사항</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">회원관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">스폰서관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">서비스관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">커뮤니케이션</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">시스템관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">개인정보관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">test</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">gps</a>
+  					</li>
+				</ul>
+    		</div>
+    		<!-- page -->
+    		<div class="col-10">
+    			<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  					<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="...">Page1</a></li>
+    				<li class="breadcrumb-item"><a href="...">Page2</a></li>
+    				<li class="breadcrumb-item active" aria-current="page">회원가입</li>
+  					</ol>
+				</nav>
+				<!-- Member -->
+				<h1>Member</h1>
+				<!-- 선택사항,날짜 -->
+				<div class="row">
+					<div class="col-2">
+					<select class="form-select" name="list">
+  							<option selected>N</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+						</select>
+						
+						
+					</div>
+					<div class="col-2 ">
+						<select class="form-select" name="list">
+  							<option selected>수정일</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+						</select>
+					</div>
+					<div class="col-2 ">
+						<select class="form-select" name="list">
+  							<option selected>N</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+						</select>
+					</div>
+					<div class="col-2 ">
+						<select class="form-select" name="list">
+  							<option selected>N</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+						</select>
+					</div>
+				</div>
+				<!-- 검색구분, 검색기능 -->
+				<div class="row">
+					<div class="col-2 gy-2">
+						<select class="form-select" name="list">
+  						<option selected>검색구분</option>
+  						<option value="...">...</option>
+  						<option value="...">...</option>
+  						<option value="...">...</option>
+  						</select>
+					</div>
+					<div class="col-3 gy-3">
+						<label for="inputsearch" class="search"></label>
+						<input type="text" class="search" id="inputsearch" placeholder="검색어">
+					</div>
+					<div class="col-1 gy-2" >
+						<button class="search button" type="button">검색</button>
+					</div>
+					<div class="col-2 gy-2 ">
+						<button class="resetbutton" type="button">새로고침</button>
+					</div>
+				</div>
+				<!-- 테이블 내용 -->
+				<div class="row">
+					<table class="table" id="user_table" style=margin-left:auto;margin-right:auto;" border="1"> 
+    			<tr>
+    				<th><input type="checkbox" id="checkboxAll" onclick="allcheckbox"></th>
+    				<th class="board_head">#</th>
+    				<th class="board_head">탈퇴</th>
+    				<th class="board_head">코드</th>
+    				<th class="board_head">이름</th>
+    				<th class="board_head">아이디</th>
+    				<th class="board_head">성별</th>
+    				<th class="board_head">이메일</th>
+    				<th class="board_head">주소</th>
+    				<th class="board_head">전화번호</th>
+    				<th class="board_head">등록일</th>
+    				<th class="board_head">수정일</th>   				
+    			</tr>
+    			
+    			<tr>
+    				<td><input type="checkbox"></th>
+    				<td class="board_post">8542</td>
+    				<td class="board_post">N</td>
+    				<td class="board_post">8943</td>
+    				<td class="board_post">조동구</td>
+    				<td class="board_post"></td>
+    				<td class="board_post"></td>
+    				<td class="board_post"></td>
+    				<td class="board_post"></td>
+    				<td class="board_post"></td>    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    			</tr>
+    		</table>
+				</div>
+				<!-- 페이징 기능 -->
+					<div class="row">
+						<div class="page"> <!-- 페이징 -->
+    						<nav aria-label="Page navigation example">
+  								<ul class="pagination justify-content-center">
+    								<li class="page-item">
+      									<a class="page-link" href="..." aria-label="Previous">
+        									<span aria-hidden="true">&laquo;</span>
+      									</a>
+    								</li>
+    									<li class="page-item active"><a class="page-link" href="...">1</a></li>
+    									<li class="page-item"><a class="page-link" href="...">2</a></li>
+    									<li class="page-item"><a class="page-link" href="...">3</a></li>
+    									<li class="page-item">
+      										<a class="page-link" href="..." aria-label="Next">
+        										<span aria-hidden="true">&raquo;</span>
+      										</a>
+    									</li>
+  								</ul>
+							</nav>
+    					</div>
+					</div>
+					
+					<!-- 삭제 버튼 -->
+					<div class="row">
+						<div class="col-2">
+							<button type="button" class="modal_button" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제</button>
+							<!-- 모달 기능 -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+  							<div class="modal-dialog">
+    						<div class="modal-content">
+      						<div class="modal-header">
+        						<h1 class="modal-title fs-5" id="exampleModalLabel">삭제</h1>
+        						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      						</div>
+      						<div class="modal-body">
+        					삭제하시겠습니까?
+      						</div>
+      						<div class="modal-footer">
+        						<button type="button" class="btn-secondary" data-bs-dismiss="modal">예</button>
+        						<button type="button" class="btn-primary" data-bs-dismiss="modal">아니요</button>
+      						</div>
+    						</div>
+  							</div>
+							</div>
+					</div>
+										
+				</div>
+									
+			</div>		
+    	</div>
+   	</form>	
+    
+    
+    	
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
