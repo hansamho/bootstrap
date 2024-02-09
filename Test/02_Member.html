@@ -8,9 +8,49 @@
   </head>
   <body>
   	<form action="...">
-  	<div class="Member_list">			
-  		<table class="table" id="user_table" style=margin-left:auto;margin-right:auto;">
-  		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  	<div class="admin_list">
+  	<div class="container">
+  		<div class="row">
+  		<div class="col-2">
+  		<ul class="flex-column">
+  					<li class="nav-item">
+    					<a class="nav-link active" aria-current="page" href="#">home</a>
+  					</li>
+  					<li class="nav-list">
+    					<a class="nav-link" href="#">공지사항</a>
+  					</li>
+  					<li class="nav-item">
+   						<a class="nav-link" href="#">회원관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">스폰서관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">광고관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">서비스관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">커뮤니케이션</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">시스템관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">개인정보관리</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">test</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" href="#">gps</a>
+  					</li>
+				</ul>
+ 
+  		</div>
+  			<div class="col-10">
+  				<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   			<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="...">Page1</a></li>
     		<li class="breadcrumb-item"><a href="...">Page2</a></li>
@@ -54,6 +94,29 @@
 						</select>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-2 gy-3">
+						<select class="form-select" name="list">
+  							<option selected>검색구분</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+  							<option value="...">...</option>
+						</select>
+					</div>
+					<div class="col-2 gy-3 gx-3">
+						<nav class="search">
+							<input type="text" placeholder="검색어">
+						</nav>
+					</div>
+					<div class="col-2 gy-3 ">
+						<button type="submit">검색</button>
+					</div>
+					<div class="col-2 gy-3 gx-0">
+						<button onclick="window.location.reload()">새로고침</button>
+					</div>
+				</div>
+					
+				<table class="table" id="user_table" style=margin-left:auto;margin-right:auto;">
     			<tr>
     				<th><input type="checkbox" id="checkboxid"></th>
     				<th class="board_head">#</th>
@@ -69,22 +132,158 @@
     				<th class="board_head">수정일</th>   				
     			</tr>
     			<tr>
-    				<th><input type="checkbox"></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
-    				<th></th>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
     			
     			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			<tr>
+    				<td><input type="checkbox"></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			
+    			</tr>
+    			
     		</table>
-    	<div class="page">
+    		
+    		<div class="page">
     		<nav aria-label="Page navigation example">
   				<ul class="pagination justify-content-center">
     				<li class="page-item">
@@ -103,6 +302,13 @@
   				</ul>
 			</nav>
     	</div>
+    		
+    		
+  			</div>
+  		</div>
+  	</div>			
+  		
+    	
  		
   	</div>
     		
