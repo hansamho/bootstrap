@@ -78,20 +78,10 @@
 						</select>
 					</div>
 					<div class="col-2 ">
-						<select class="form-select" name="list">
-  							<option selected>N</option>
-  							<option value="...">...</option>
-  							<option value="...">...</option>
-  							<option value="...">...</option>
-						</select>
+						<input type="date" value="2024-01-07" min="2020-01-01" max="2030-12-31">
 					</div>
 					<div class="col-2 ">
-						<select class="form-select" name="list">
-  							<option selected>N</option>
-  							<option value="...">...</option>
-  							<option value="...">...</option>
-  							<option value="...">...</option>
-						</select>
+						<input type="date" value="2024-02-06" min="2020-01-01" max="2030-12-31">
 					</div>
 				</div>
 				<div class="row">
@@ -116,7 +106,7 @@
 					
 				<table class="table" id="user_table" style=margin-left:auto;margin-right:auto;">
     			<tr>
-    				<th><input type="checkbox" id="checkboxid"></th>
+    				<th><input type="checkbox" id="checkboxid" class="checkAll"></th>
     				<th class="board_head">#</th>
     				<th class="board_head">탈퇴</th>
     				<th class="board_head">코드</th>
@@ -302,7 +292,7 @@
     	</div>
     		<!-- 삭제버튼 -->
 			<button type="button" id="button_delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
- 			 삭제
+ 			 <i class="fa-solid fa-trash"></i>삭제
 			</button>
 
 			<!-- 모달 -->
