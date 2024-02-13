@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-  	<form action="...">
+  	<form action="#">
   	<div class="admin_list">
   	<div class="container">
   	<!-- 목록 -->
@@ -82,10 +83,10 @@
 					</div>
 					<!-- 날짜 -->
 					<div class="col-2 ">
-						<input type="date" value="2024-01-07" min="2020-01-01" max="2030-12-31">
+						<input class="form-control" type="date" value="2024-01-07" min="2020-01-01" max="2030-12-31">
 					</div>
 					<div class="col-2 ">
-						<input type="date" value="2024-02-06" min="2020-01-01" max="2030-12-31">
+						<input class="form-control" type="date" value="2024-02-06" min="2020-01-01" max="2030-12-31">
 					</div>
 				</div>
 				<div class="row">
@@ -100,21 +101,23 @@
 					</div>
 					<!-- 검색 -->
 					<div class="col-2 gy-3 gx-3">
-						<nav class="search">
-							<input type="text" placeholder="검색어">
+						<nav class="form-search" role="search">
+							<input class="form-control" type="search" placeholder="검색어">
 						</nav>
 					</div>
 					<!-- 새로고침 -->
-					<div class="col-2 gy-3 ">
-						<button type="submit">검색</button>
-						<button onclick="window.location.reload()">새로고침</button>
+					<div class="col-1 gy-3 ">
+						<button class="form-control" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+					</div>
+					<div class="col-1 gy-3">
+						<button class="form-control" onclick="window.location.reload()"><i class="fa-solid fa-rotate-right"></i></button>
 					</div>
 				</div>
 				<!-- 테이블 -->
 				<table class="table" id="user_table" style=margin-left:auto;margin-right:auto;" >
     			<tr>
     				<th><input type="checkbox" id="checkboxid" class="checkAll"></th>
-    				<th class="board_head" align="center">#</th>
+    				<th class="board_head">#</th>
     				<th class="board_head">탈퇴</th>
     				<th class="board_head">코드</th>
     				<th class="board_head">이름</th>
@@ -130,8 +133,8 @@
     				<td><input type="checkbox"></td>
     				<td>8527</td>
     				<td>N</td>
-    				<td></td>
-    				<td></td>
+    				<td>8944</td>
+    				<td>조동구</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -144,7 +147,7 @@
     				<td><input type="checkbox"></td>
     				<td>8526</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8943</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -159,7 +162,7 @@
     				<td><input type="checkbox"></td>
     				<td>8525</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8942</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -174,7 +177,7 @@
     				<td><input type="checkbox"></td>
     				<td>8524</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8941</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -189,7 +192,7 @@
     				<td><input type="checkbox"></td>
     				<td>8523</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8940</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -204,7 +207,7 @@
     				<td><input type="checkbox"></td>
     				<td>8522</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8939</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -219,7 +222,7 @@
     				<td><input type="checkbox"></td>
     				<td>8521</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8938</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -234,7 +237,7 @@
     				<td><input type="checkbox"></td>
     				<td>8520</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8937</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -249,7 +252,7 @@
     				<td><input type="checkbox"></td>
     				<td>8519</td>
     				<td>N</td>
-    				<td></td>
+    				<td>8936</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -264,8 +267,8 @@
     				<td><input type="checkbox"></td>
     				<td>8518</td>
     				<td>N</td>
-    				<td></td>
-    				<td></td>
+    				<td>8935</td>
+    				<td>박종우</td>
     				<td></td>
     				<td></td>
     				<td></td>
@@ -298,11 +301,11 @@
 			</nav>
     	</div>
     		<!-- 삭제버튼 -->
-    		<button type="button" id="button_delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
- 			 <i class="fa-solid fa-trash"></i>삭제
+    		<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: red">
+ 			 <i class="fa-solid fa-trash"></i>
 			</button>
 			<div class=" d-md-flex justify-content-md-end">
-  				<button class=" me-md-2" type="button">추가</button>
+  				<button class=" btn" type="button" style="background:aqua;"><i class="fa-solid fa-plus"></i></button>
 			</div>
 
 			<!-- 모달 -->
