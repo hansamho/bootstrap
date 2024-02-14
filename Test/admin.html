@@ -14,42 +14,19 @@
   	<!-- 목록 -->
   		<div class="row">
   		<div class="col-2">
-  		<ul class="flex-column">
-  					<li class="nav-item">
-    					<a class="nav-link active" aria-current="page" href="#">home</a>
-  					</li>
-  					<li class="nav-list">
-    					<a class="nav-link" href="#">공지사항</a>
-  					</li>
-  					<li class="nav-item">
-   						<a class="nav-link" href="#">회원관리</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">스폰서관리</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">광고관리</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">서비스관리</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">커뮤니케이션</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">시스템관리</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">개인정보관리</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">test</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">gps</a>
-  					</li>
-				</ul>
- 
+  					<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  						<button type="button" class="btn"><i class="fa-regular fa-clock"></i>home</button>
+  						<button type="button" class="btn">공지사항</button>
+  						<button type="button" class="btn"><i class="fa-regular fa-user"></i>회원관리</button>
+ 						<button type="button" class="btn"><i class="fa-regular fa-user"></i>스폰서관리</button>
+ 						<button type="button" class="btn">광고관리</button>
+ 						<button type="button" class="btn">서비스관리</button>
+ 						<button type="button" class="btn">커뮤니케이션</button>
+ 						<button type="button" class="btn">시스템관리</button>
+ 						<button type="button" class="btn"><i class="fa-regular fa-user"></i>개인정보관리</button>
+ 						<button type="button" class="btn"><i class="fa-regular fa-user"></i>gps</button>
+ 						<button type="button" class="btn"><i class="fa-regular fa-user"></i>test</button>
+  					</div>
   		</div>
   		<!-- page -->
   			<div class="col-10">
@@ -276,12 +253,12 @@
     				<td></td>
     				<td></td>
     				<td></td>
-    			
     			</tr>
     			
     		</table>
-    		<!-- 페이징 기능 -->
-    		<div class="page">
+    		<div class="row">
+    			<div class="col gy-3">
+    				<div class="page">
     		<nav aria-label="Page navigation example">
   				<ul class="pagination justify-content-center">
     				<li class="page-item">
@@ -299,14 +276,16 @@
     				</li>
   				</ul>
 			</nav>
+    		</div>
     	</div>
-    		<!-- 삭제버튼 -->
-    		<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: red">
- 			 <i class="fa-solid fa-trash"></i>
+   		</div>
+   			<div class="row">
+   				<div class="col">
+   				<!-- 삭제버튼 -->
+   			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: red">
+ 			 	<i class="fa-solid fa-trash"></i>
 			</button>
-			<div class=" d-md-flex justify-content-md-end">
-  				<button class=" btn" type="button" style="background:aqua;"><i class="fa-solid fa-plus"></i></button>
-			</div>
+			
 
 			<!-- 모달 -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -317,25 +296,48 @@
         					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       				</div>
       			<div class="modal-body">
-        		삭제하시겠습니까?
+        		<p>삭제하시겠습니까?</p>
      			</div>
       		<div class="modal-footer">
-        		<button type="button"  data-bs-dismiss="modal">예</button>
-        		<button type="button"  data-bs-dismiss="modal">아니요</button>
+        		<button type="button" class="btn btn-primary"  data-bs-dismiss="modal">예</button>
+        		<button type="button" class="btn" data-bs-dismiss="modal">아니요</button>
       		</div>
    				</div>
   			</div>
 		</div>
-    	
+   				</div>
+   				<!-- 추가 버튼 -->
+   				<div class="col" align="right">
+   					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#plusModal" >
+ 			 	<i class="fa-solid fa-plus"></i>
+			</button>
+			
+
+			<!-- 모달 -->
+		<div class="modal fade" id="plusModal" tabindex="-1" aria-labelledby="plusModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h1 class="modal-title fs-5" id="plusModalLabel">추가</h1>
+        					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      				</div>
+      			<div class="modal-body">
+        		<p align="left">추가하시겠습니까?</p>
+     			</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary"  data-bs-dismiss="modal">예</button>
+        		<button type="button" class="btn" data-bs-dismiss="modal">아니요</button>
+      		</div>
+   				</div>
   			</div>
+		</div>
+   				</div>
+   			</div>
   		</div>
-  	</div>			
-  		
-    	
- 		
-  	</div>
-    		
-   	</form>
+  	 </div>			
+ 	</div>	
+  </div>
+</form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
