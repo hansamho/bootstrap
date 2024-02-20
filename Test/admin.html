@@ -108,7 +108,15 @@
 						</script>
 					</div>
 					<div class="col-2 ">
-						<input type="date" class="form-control" value="2024-01-07">
+						<!-- datetimepicker -->
+						<input id="datetimepicker" type="text" class="datetimepicker form-control">
+						<script type="text/javascript">
+						$(function() {
+							$(".datetimepicker").datetimepicker({ 
+								format: "Y-m-d H:i",
+							});
+						});
+						</script>
 					</div>
 				</div>
 				<div class="row">
