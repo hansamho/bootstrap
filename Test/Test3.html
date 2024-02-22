@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  	<script src="http://code.jquery.com/jquery-latest.js"></script>
+   
+    <script>
+     $(document).ready(function () {
+    	
+      function show(){
+    	var ind = $('option:selected').val();
+       	var array = [
+                     {id:"hong",  subject:"잘~지내지?", date:"2019-04-23" },
+                     {id:"kim",  subject:"점심 뭐 먹지?", date:"2019-04-24" },
+                     {id:"lee",  subject:"짜장먹자", date:"2019-04-24" },
+                   ];
+		var output = '<table><thead><tr><th>번호</th><th>아이디</th><th>제목</th><th>날짜</th></tr></thead><tbody>';
+		
+		$.each(array, function(index, item) {
+			if(ind > index) {
+				output += '<tr><td>';
+				output += index+1;
+				output += '</td><td>';
+				output += item.id;
+				output += '</td><td>';
+				output += item.subject;
+				output += '</td><td>';
+				output += item.date;
+				output += '</td></tr>';
+			}
+		});
+		output += '</tbody></table>';
+		$('table').html(output);
+        /*document.getElementsByTagName("table")[0].innerHTML = output;*/
+
+      }
+        	
+        	show();
+            setInterval(show, 100);
+     });
+    </script>
+  
+  </head>
+  <body>
+<div>
+       <span>보여줄 항목 수</span> 
+       <select id="count"> 
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3" selected>3</option>
+       </select>
+   </div>
+   <table></table>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
