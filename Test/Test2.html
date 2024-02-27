@@ -7,10 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
- <div class="input-group input-group-sm">
-								<input type="text" id="ifmmOfficeZipcode" name="ifmmOfficeZipcode" value="" maxlength="20" placeholder="숫자만" class="form-control" readonly onClick="getAddr(this);"/>
-								<button type="button" id="ifmmOfficeAddrClear" class="btn btn-outline-secondary" onClick="deleteAddr(this);"><i class="fa-solid fa-x"></i></button>
-							</div>
+<p>
+  <span>성별</span>
+
+  <label for="male">남성</label>
+  <input id="male" type="radio"  value="남성" name="ss">
+
+  <label for="female">여성</label>
+  <input id="female" type="radio" checked value="여성" name="ss">
+</p>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
